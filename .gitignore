@@ -1,0 +1,73 @@
+# Core Project Layout Exclusions
+third_party/
+data/raw/*
+data/processed/*
+data/outputs/*
+data/models/*
+
+# Keep Placeholder Marks
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/outputs/.gitkeep
+!data/models/.gitkeep
+
+# Images & Datasets
+*.jpg
+*.jpeg
+*.png
+football-players-detection-10/
+football-field-detection-12/
+football-ball-detection-2/
+football-merged-dataset/
+football-merged-dataset.zip
+football-*-detection-*/
+data/merged_labels/
+data/raw_images/
+
+# Video Extensions & Binary Large Media Assets
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model Weights (PyTorch, ONNX, Engine formats)
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Python Compilation & Memory Footprints
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments & Local Configurations
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Local Logging Output
+*.log
+
+# Testing & Build Caches
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# IDE Specific Controls
+.vscode/
+.idea/
+
+# Original Cloned Repository
+MatchTime/
+
+# Project Archives
+football_commentary_project.zip
+*.zip
