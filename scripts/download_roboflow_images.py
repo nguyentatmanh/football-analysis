@@ -5,11 +5,13 @@ import shutil
 def main():
     # 1. Cài đặt/kiểm tra thư viện roboflow
     try:
+        # pyrefly: ignore [missing-import]
         from roboflow import Roboflow
     except ImportError:
         print("Roboflow library is not installed. Installing it now...")
         import subprocess
         subprocess.check_call([sys.executable, "-m", "pip", "install", "roboflow"])
+        # pyrefly: ignore [missing-import]
         from roboflow import Roboflow
 
     # 2. Khởi tạo kết nối Roboflow API

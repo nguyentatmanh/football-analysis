@@ -3,11 +3,13 @@ import sys
 
 def download():
     try:
+        # pyrefly: ignore [missing-import]
         import gdown
     except ImportError:
         print("gdown is not installed or out of date. Installing/upgrading dependencies...")
         import subprocess
         subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "gdown"])
+        # pyrefly: ignore [missing-import]
         import gdown
 
     # Set paths
